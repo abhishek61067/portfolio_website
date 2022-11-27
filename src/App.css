@@ -6,6 +6,11 @@
   --primary-dark: #212529;
 }
 
+/* navbar starts*/
+nav{
+  z-index:2;
+}
+
 nav a.nav-link{
   letter-spacing: 0.05rem;
   font-weight:500;
@@ -28,8 +33,8 @@ nav a.nav-link{
 
 /* .navbar-nav li.active, */
  .navbar-nav li a:focus{
-border-bottom: 2px solid var(--primary-green);
-color:var(--primary-white);
+   border-bottom: 2px solid var(--primary-green);
+   color:var(--primary-white);
 transition-property: border;
 transition-duration: 0.2s;
 transition-timing-function: ease-in;
@@ -73,6 +78,91 @@ a.nav-link:focus{
 }
 
 
+/* navbar ends */
+
+/* header starts */
+.header-wraper{
+  position:relative;
+  background: url("bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height:90vh;
+}
+
+.header-wraper::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0,0,0,0.7);
+  
+  
+  left:0;
+  top:0;
+  background-size: cover;
+}
+.main-info{
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  bottom:0;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.main-info h1{
+  text-transform: uppercase;
+  color: var(--primary-white)
+
+}
+
+/* header ends */
+
+/* typed-text */
+.typed-text{
+  font-size:2rem;
+  color:var(--primary-white);
+  }
+
+
+.btn-main-offer{
+  border: 1px solid white;
+  text-transform: uppercase;
+  border-radius:15px;
+  padding: 5px;
+  color:white;
+  margin:2rem;
+  text-decoration: none;
+}
+
+.btn-main-offer:hover {
+  color:var(--primary-white);
+  border: 1px solid var(--primary-green);
+  background:var(--primary-green);
+  transition:all 0.1s ease-in-out;
+}
+
+.ts-particles-section{
+  position: relative;
+}
+
+.header-wraper{
+  position:relative;
+}
+
+
+/* for tsparticles */
+.tsparticles > canvas{
+  height:50vh !important;
+  width:100vh !important;
+
+}
 
 
 
