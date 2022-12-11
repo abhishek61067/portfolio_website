@@ -5,6 +5,7 @@ import Header from "./components/Header";
 
 import React from "react";
 import Particle from "./components/Particle";
+import About from "./components/About";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
         {/* make positonrel for ts-particles-section and absolute for particle and header so it starts from header */}
       <Particle />
       </div>
+
+      <About/>
       
     </div>
   );

@@ -8,12 +8,21 @@ const header = () => {
         <h1>Web Development</h1>
         <Typed
           className="typed-text"
-          strings={["Reactjs", "Nodejs", "Mysql", "Bootstrap", "Tailwind", "Javascript"]}
+          strings={[
+            "Reactjs",
+            "Nodejs",
+            "Mysql",
+            "Bootstrap",
+            "Tailwind",
+            "Javascript",
+          ]}
           typeSpeed={40}
           backSpeed={60}
           loop
         />
-        <a href="#" className="btn-main-offer">Contact Me</a>
+        <a href="#" className="btn-main-offer">
+          Contact Me
+        </a>
       </div>
     </div>
   );

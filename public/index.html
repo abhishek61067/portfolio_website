@@ -39,6 +39,50 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+<style>
+  a {
+    text-decoration: none;
+    color: black
+  }
+
+  ul li.active {
+    border-bottom: 5px solid cyan;
+
+  }
+
+  a:active {
+    color: black;
+  }
+
+  li:focus {
+    color: white;
+  }
+
+  ul {
+    display: flex;
+  }
+
+  li {
+    list-style-type: none;
+    margin-right: 50px;
+  }
+</style>
+
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+    $('li').on("click", function () {
+      $(this).siblings().removeClass("active");
+      $(this).addClass("active");
+    })
+
+  })
+
+</script>
+
+
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
       integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>

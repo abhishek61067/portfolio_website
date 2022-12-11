@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+a{
+    text-decoration:none;
+    color:black
+}
+
+        ul li.active{
+border-bottom: 5px solid cyan;
+
+        }
+
+        a:active{
+            color:black;
+        }
+
+        li:focus{
+            color:white;
+        }
+ul{
+    display:flex;
+}
+
+li{
+    list-style-type:none;
+    margin-right:50px;
+}
+
+    </style>
+    
+<ul>
+    <li class="active">
+        <a href="#">Home</a>
+    </li>
+    <li><a href="#">Contact</a></li>
+</ul>
+
+<script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('li').on("click", function(){
+                $(this).siblings().removeClass("active");
+            $(this).addClass("active");
+        })
+    
+      })
+
+    </script>
+
+
+</body>
+</html>
