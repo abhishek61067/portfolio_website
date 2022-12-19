@@ -1,17 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from './components/Navbar';
-  import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-    import { faBars } from '@fortawesome/react-fontawesome'
+import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
-
-
+import React from "react";
+import Particle from "./components/Particle";
+import About from "./components/About";
 
 function App() {
   return (
     <div className="App">
-      <Navbar/>
+      <Navbar />
+
+      <div className="ts-particles-section">
+        <Header />
+        {/* make positonrel for ts-particles-section and absolute for particle and header so it starts from header */}
+      <Particle />
+      </div>
+
+      <About/>
+      
     </div>
   );
 }
